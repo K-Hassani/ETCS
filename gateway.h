@@ -5,6 +5,7 @@
 #include <channel.h>
 
 namespace simulatorlib {
+
 template <class TIN, class TOUT> class gateway : channel {
 protected:
   TOUT tout_ = TOUT{};
@@ -16,6 +17,7 @@ public:
       throw throw "channel " + name_ + " can not set buffer";
     tout_ = transform(value);
   }
+
   virtual TOUT get_buffer_value() { return tout_; }
 };
 } // namespace simulatorlib

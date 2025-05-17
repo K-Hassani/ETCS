@@ -6,5 +6,7 @@
 #include <string>
 
 namespace simulatorlib {
-class g1 : gateway<std::string, int> {};
+class g1 {
+  
+};
 } // namespace simulatorlib
